@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Montserrat';
+}
+
+@layer components {
+    .gap-movies {
+        @apply flex flex-col gap-8 mt-12 items-center
+    }
+
+    .button-hero {
+        @apply w-[272px] h-20 flex justify-center items-center rounded-full bg-[#242E43]
+    }
+
+    .button-share {
+        @apply w-[121px] h-[57px] flex justify-center items-center bg-[#242E43] rounded-full cursor-pointer
+    }
+}

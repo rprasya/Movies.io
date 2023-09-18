@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies.io</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-[#233458] to-[#111827] h-full flex-col">
+    <!-- navigation start -->
+    <div class="w-full flex h-[49px] mt-[18px] justify-center items-center">
+        <div class="flex items-center">
+            <h1 class="text-2xl text-white font-bold mr-14">Movies.io</h1>
+            <ul class="flex space-x-8 text-white text-base font-light mr-[800px]">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#movies" class="hover:underline">Movies</a></li>
+                <li><a href="#anime" class="hover:underline">Anime</a></li>
+            </ul>
+
+            <span class="w-56 p-2 rounded-full bg-[#1d2c4d] hover:bg-opacity-50 flex justify-center items-center gap-2">
+                <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
+                <input type="search" placeholder="Search.."
+                    class="outline-none border-none bg-transparent text-white w-40">
+            </span>
+
+            <a class="w-[140px] h-[49px] flex justify-center items-center text-white font-normal text-xl ml-[35.5px] hover:bg-gradient-to-r from-[#1d4fd85b] to-[#1D4ED8] rounded-xl"
+                href="#signin">Sign in</a>
+            <a class="w-[140px] h-[49px] flex justify-center items-center text-white font-normal text-xl mx-[21px] hover:bg-gradient-to-r from-[#1d4fd85b] to-[#1D4ED8] rounded-xl"
+                href="#signup">Sign Up</a>
+        </div>
+    </div>
+    <!-- navigation end -->
+
+    <hr class="mt-7 mb-14 border-[#535F77]">
+
+    <!-- hero start -->
+    <div class="w-full flex justify-center items-center">
+        <div class="flex flex-col items-center mr-[130px]">
+            <img src="dist/img/red.png" alt="Red Movies" class="bg-cover hover:scale-105 hover:rotate-6 transition-all duration-500 cursor-pointer">
+            <span
+                class="w-[397px] h-[65px] border-none mt-8 flex justify-center items-center gap-[9px] rounded-full bg-[#ffffff06] hover:bg-gradient-to-r from-[#7D96DC] to-[#1D4ED8] cursor-pointer group">
+                <i class="fa-solid fa-clapperboard text-[#1D4ED8] group-hover:text-white"></i>
+                <p class="font-bold text-[#1D4ED8] group-hover:text-white">Trailer</p>
+            </span>
+            <div class="flex mx-auto items-center gap-[70px]">
+                <div class="gap-movies">
+                    <i class="fa-solid fa-star text-[26px] text-[#757575] hover:text-blue-800 cursor-pointer"></i>
+                    <p class="text-white text-base">Favorite</p>
+                </div>
+                <div class="gap-movies">
+                    <i class="fa-solid fa-bookmark text-[26px] text-[#757575] hover:text-blue-800 cursor-pointer"></i>
+                    <p class="text-white text-base">Watch Later</p>
+                </div class="text-white text-base">
+                <div class="gap-movies">
+                    <i class="fa-solid fa-eye text-[26px] text-[#757575] hover:text-blue-800 cursor-pointer"></i>
+                    <p class="text-white text-base">Watched</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1 class="font-bold text-[40px] text-white">One Piece Film : Red</h1>
+                <div class="flex mt-[51px]">
+                    <span
+                        class="button-hero mr-5 hover:bg-gradient-to-r from-[#7D96DC] to-[#1D4ED8] cursor-pointer group">
+                        <i class="fa-solid fa-play text-xl mr-4 text-[#1D4ED8] group-hover:text-white"></i>
+                        <p class="text-2xl text-white">Watch</p>
+                    </span>
+                    <span class="button-hero hover:bg-gradient-to-r from-[#7D96DC] to-[#1D4ED8] cursor-pointer group">
+                        <i
+                            class="fa-solid fa-cloud-arrow-down text-xl mr-[10px] text-[#1D4ED8] group-hover:text-white"></i>
+                        <p class="text-2xl text-white">Download</p>
+                    </span>
+                </div>
+                <div class="flex mt-[51px]">
+                    <div class="w-[486px] mr-[120px]">
+                        <h3 class="font-bold text-white">STORYLINE</h3>
+                        <p class="text-white mt-[21px]">The Straw Hats journey to Elegia island to see the iconic Uta in
+                            concert. But it's not all music and games as quickly chaos breaks out with the Big Mom
+                            pirates, Navy, Heart pirates, and more joining the fray. Luffy and Uta are old friends, but
+                            in the fighting old wounds are opened and lives are at risk.</p>
+                        <div class="mt-[42px]">
+                            <div class="flex text-base">
+                                <p class="text-[#606060] mr-[109px]">Rating</p>
+                                <p class="text-white font-medium">8.9</p>
+                            </div>
+                            <div class="flex text-base mt-6">
+                                <p class="text-[#606060] mr-[63px]">Release year</p>
+                                <p class="text-white font-medium">2022</p>
+                            </div>
+                            <div class="flex text-base mt-6">
+                                <p class="text-[#606060] mr-[106px]">Genres</p>
+                                <p class="text-white font-light italic">Adventure, Fantacy</p>
+                            </div>
+                            <div class="flex text-base mt-6">
+                                <p class="text-[#606060] mr-[85px]">Countries</p>
+                                <p class="text-white font-light italic">Japan</p>
+                            </div>
+                            <div class="flex text-base mt-6">
+                                <p class="text-[#606060] mr-[92px]">Duration</p>
+                                <p class="text-white font-light italic">2 hours +</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white">Writen by</h3>
+                        <div
+                            class="w-[266px] h-[83px] flex justify-start items-center bg-[#242E43] rounded-2xl mt-[34px] hover:bg-[#293247] cursor-pointer">
+                            <img src="dist/img/oda.png" alt="" class="w-[60px] h-[60px] ml-[11px] mr-[27px]">
+                            <div>
+                                <p class="font-normal text-base text-white">Eiichiro Oda</p>
+                                <p class="text-[13px] text-[#878787]">Official Creator & <br> manga artist</p>
+                            </div>
+                        </div>
+                        <p class="text-base font-normal text-[#1D4ED8] mt-[26px] text-end hover:underline"><a
+                                href="">See all</a></p>
+                    </div>
+                </div>
+
+                <hr class="mt-[24.5px] border-[#535F77]">
+
+                <div class="flex gap-6 mt-[30.5px]">
+                    <span class="button-share hover:bg-[#293247]">
+                        <i class="fa-brands fa-twitter text-white text-2xl mr-1 hover:text-sky-500"></i>
+                        <i class="fa-solid fa-heart text-[#525252] text-xl hover:text-pink-700"></i>
+                        <p class="text-white ml-4">+1</p>
+                    </span>
+                    <span class="button-share hover:bg-[#293247]">
+                        <i class="fa-brands fa-facebook text-white text-2xl mr-1 hover:text-blue-600"></i>
+                        <i class="fa-solid fa-thumbs-up text-[#525252] text-xl hover:text-white"></i>
+                        <p class="text-white ml-4">1.5K</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero end -->
+</body>
+
+</html>
